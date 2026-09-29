@@ -7,3 +7,52 @@ int main(){
 
     return 0;
 }
+
+// In this example, we demonstrate how to declare a variable, assign a value, and print it in C. 
+// This method provides a simple way to store and display numerical values dynamically using basic syntax.
+
+// When executed, the code will show:
+
+// output:- Student Marks: 87
+
+#include <stdio.h>
+
+int main(){
+    int marks = 87;
+
+    printf("Student Marks: %d\n",marks);
+
+    return 0;
+
+}
+
+// Write a C program to declare and initialize a variable for a product's quantity. Display the value stored.
+
+// Expected Output:
+
+// Product Quantity: 50
+
+#include <stdio.h>
+
+int main() {
+    
+    // Declare an integer variable for quantity
+    int quantity = 50;
+    
+    // Print the quantity
+    printf("Product Quantity: %d", quantity);
+    
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
