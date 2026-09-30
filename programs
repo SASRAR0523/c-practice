@@ -45,10 +45,61 @@ int main() {
     return 0;
 }
 
+// Student Grade Tracker
+// In this program, you're building a simple system to track a student's academic information using C. You will use three different primitive data types: a char to represent grades, an int to store the student's unique ID and a short to store the class section number
 
+// Steps to complete:
 
+// Declare and initialize all three variables.
+// Set the grade as 'B'.
+// Set the student ID as 20231.
+// Set the section number as 12.
+// Print these values.
 
+#include <stdio.h>
 
+int main() {
+    // Declare and initialize student details
+    char studentGrade = 'B';
+    int studentID = 28231;
+    int sectionnumber = 12;
+
+    // Print student details
+    printf("Student Grade: %c\n", studentGrade);
+    printf("student ID: %d\n", studentID);
+    printf("section number: %d\n", sectionnumber);
+
+    return 0;
+}
+
+// Calculating the Area of a Circle
+
+// You are working as a developer in a scientific research organization. Write a program to correctly assign the datatypes
+// for radius and area of a circle, using float for the radius and double for the area.
+
+// Steps to complete:
+
+// The radius of the circle must be stored as a floating-point number.
+// The area needs to be stored in a double for higher precision.
+// Print the radius and the area of the circle.
+
+#include <stdio.h>
+
+int main() {
+    // Declare a float variable for the radius and initialize it with 5.345
+    float Radius = 5.345f;
+
+    // Declare a double variable for the area and initialize it with 89.752232
+    double Area = 89.752232;
+
+    // Print the radius of the circle
+    printf("Radius: %f\n",Radius);
+
+    // Print the area of the circle
+    printf("Area: %f\n",Area);
+
+    return 0;
+}
 
 
 
