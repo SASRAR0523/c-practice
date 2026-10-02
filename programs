@@ -153,3 +153,27 @@ int main() {
     
     return 0;
 }
+
+// Declaring Multiple Variables
+// You are required to declare multiple variables of different data types in C. The task is to declare the variables of these following types:
+
+// An int to store the age and height (in cm) of a person.
+// A long to store the person's contact number and PIN code of his city.
+// Once declared, you need to assign values to these variables and display them.
+
+#include <stdio.h>
+
+int main(void) {
+    int age = 25;
+    int height = 168;
+    long long contactNumber = 9876543210LL;
+    long pinCode = 111111L;
+
+    printf("Age: %d\n", age);
+    printf("Height: %d cm\n", height);
+    printf("Contact Number: %lld\n", contactNumber);
+    printf("PIN Code: %ld\n", pinCode);
+
+
+    return 0;
+}
