@@ -212,3 +212,56 @@ int main() {
 
     return 0;
 }
+
+// Write a program to represent an animal section in the zoo with the information given below.
+
+// Steps to Complete:
+
+// Store zoo ID as an int with value 49.
+// Declare zoo section as an int with value 100.
+// Declare and initialize ticket price as a float with value 25.75f.
+// Convert the zoo ID and zoo section from int to char explicitly using explicit type conversion.
+// Output all the information in the program.
+
+#include <stdio.h>
+
+int main() {
+    int zooID = 49;
+    int zooSection = 100;
+    float ticketPrice = 25.75f;
+
+    char convertedZooID = (char)zooID;
+    char convertedZooSection = (char)zooSection;
+
+    printf("Zoo ID (converted to char): %c\n", convertedZooID);
+    printf("Zoo Section (converted to char): %c\n", convertedZooSection);
+    printf("Ticket Price: %f\n", ticketPrice);
+
+    return 0;
+}
+
+// Variable Scope - Block Level
+
+// In C, block-level scope refers to variables declared within a pair of braces {}, such as inside a function, 
+// a loop, or a conditional statement. These variables are local to that block and cannot be accessed outside of it.
+
+#include <stdio.h>
+
+int main() {
+    // 'studentID' is a local variable in the 'main' function 
+    // It is accessible anywhere within the 'main' function block.
+    int studentID = 1;
+    {
+        int score = 90;  // block-level variable
+        printf("Score inside block: %d\n", score);
+        printf("Student ID from outer block: %d", studentID); 
+    }
+    // Uncommenting the line below will cause a compile error
+    // printf("Score outside block: %d", score);
+    return 0;
+}
+
+// Expected Output:
+
+Score inside block: 90
+Student ID from outer block: 1
