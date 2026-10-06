@@ -284,3 +284,69 @@ int main() {
     return 0;
 }
 
+// Addition Operator (+) in C
+// The addition operator + is a binary arithmetic operator in C used to add two numeric values. It takes two operands and returns their sum.
+
+#include <stdio.h> 
+
+int main() {
+    int a = 5;       // Declare and initialize the first integer
+    int b = 10;      // Declare and initialize the second integer
+
+    // Display the result of the addition using the + operator to add a and b
+    printf("Sum = %d", a + b);  // Output: 15
+
+    return 0; 
+}
+
+// we demonstrate how the + operator is used to add three integer values. The program stores the numbers 5, 10, and 15 
+// in variables and prints their total using the addition operator.
+
+#include <stdio.h>  
+
+int main() {
+    // Declare and initialize three integer variables
+    int num1 = 5;    // First number
+    int num2 = 10;   // Second number
+    int num3 = 15;   // Third number
+
+    printf("The sum of the three numbers is: %d", num1 + num2 + num3);
+
+    return 0;  
+}
+
+// The subtraction operator (-) in C is used to subtract one value from another returns the difference between the two operands. 
+// It's represented by the minus sign (-).
+
+#include <stdio.h>  
+
+int main() {
+    // Declare and initialize two integer variables
+    int number1 = 15;  // First number
+    int number2 = 7;   // Second number
+
+    // Print the difference using the subtraction operator
+    // number1 - number2 calculates the result directly inside printf
+    printf("Difference = %d", number1 - number2);  // Output: 8
+
+    return 0; 
+}
+
+// we demonstrate how to define integers, perform a basic subtraction, store the result in a variable, and then print the output.
+// The subtraction operator (-) is used to find the difference between two values
+
+#include <stdio.h> 
+
+int main() {
+    // Declare and initialize two integer variables
+    int number1 = 56;  // First number
+    int number2 = 34;  // Second number
+
+    // Subtract number2 from number1 and store the result in 'sum'
+    int sum = number1 - number2;
+
+    // Print the result using printf
+    printf("Difference: %d", sum);  
+
+    return 0;
+}
