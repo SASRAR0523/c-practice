@@ -350,3 +350,59 @@ int main() {
 
     return 0;
 }
+
+// Complete the missing line in the following C program to store the result of subtracting two integers, so that the output is -28.
+
+#include <stdio.h>
+
+int main() {
+    int number1 = 12;
+    int number2 = 40;
+
+    // Missing line: store the result in difference
+    int difference = number1 - number2;
+
+    printf("Difference: %d", difference);
+
+    return 0;
+}
+
+// Write a program to calculate the total calories consumed in a day through three meals. Then subtract the calories burned during exercise to find the net calorie intake.
+// Use the addition (+) and subtraction (-) operators, and display all values clearly.
+// Expected Output:
+
+// Total Calories Consumed: 1450
+// Calories Burned: 400
+// Net Calorie Intake: 1050
+
+#include <stdio.h>
+
+int main() {
+    int breakfast = 500;
+    int lunch = 600;
+    int dinner = 350;
+    int caloriesBurned = 400;
+
+    int totalCalories = breakfast + lunch + dinner;
+    int netCalories = totalCalories - caloriesBurned;
+
+    printf("Total Calories Consumed: %d\n", totalCalories);
+    printf("Calories Burned: %d\n", caloriesBurned);
+    printf("Net Calorie Intake: %d\n", netCalories);
+
+    return 0;
+}
+
+// The multiplication operator * is a binary arithmetic operator in C used to multiply two numeric values. It takes two operands and returns their product.
+
+#include <stdio.h> 
+
+int main() {
+    int a = 7;       
+    int b = 6;       
+
+    // Display the result of multiplication using the * operator
+    printf("Product = %d", a * b);  // Output: 42
+
+    return 0;  
+}
