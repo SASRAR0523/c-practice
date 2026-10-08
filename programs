@@ -406,3 +406,35 @@ int main() {
 
     return 0;  
 }
+
+// Complete the program to calculate the total cost of printing posters. Each poster has a fixed cost, and the total cost depends on
+// the number of posters printed. Use the multiplication (*) operator to calculate the final amount and print the result.
+
+#include <stdio.h>
+
+int main() {
+    int cost_per_poster = 50;
+    int number_of_posters = 10;
+    int total_cost = cost_per_poster * number_of_posters;
+
+    printf("Total Printing Cost = %d", total_cost);
+
+    return 0;
+}
+
+// The division operator / is a binary arithmetic operator in C used to divide one numeric value by another. It takes two operands and returns the quotient of the division.
+
+// If both operands are integers, the result will be integer division (decimal part is discarded).
+// If at least one operand is a float, the result will be floating-point division
+
+#include <stdio.h>  
+
+int main() {
+    int a = 20;      
+    int b = 4;       
+
+    // Display the result of division using the / operator
+    printf("Quotient = %d", a / b);  // Output: 5
+
+    return 0; 
+}
