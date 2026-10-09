@@ -438,3 +438,46 @@ int main() {
 
     return 0; 
 }
+
+// Write a program to calculate how many full boxes can be packed with chocolates and how many chocolates will remain unpacked.
+
+#include <stdio.h>
+
+int main() {
+    int totalChocolates = 123;
+    int boxCapacity = 12;
+
+    int fullBoxes = totalChocolates / boxCapacity;
+    int remainingChocolates = totalChocolates - (fullBoxes * boxCapacity);
+
+    printf("Total Chocolates: %d\n", totalChocolates);
+    printf("Box Capacity: %d\n", boxCapacity);
+    printf("Full Boxes: %d\n", fullBoxes);
+    printf("Remaining Chocolates: %d\n", remainingChocolates);
+
+    return 0;
+}
+
+// The floating-point division operator (/) in C is used to divide two numeric values and return a decimal result.
+// This occurs when at least one operand is of type float, double, or long double. Unlike integer division, floating-point division preserves the fractional part.
+
+// To control how many digits appear after the decimal point, use formatting specifiers in printf(), such as %.2f for two decimal places.
+
+#include <stdio.h>  
+
+int main() {
+    // Declare and initialize two double variable and int variable
+    double num1 = 130.0;  
+    double num2 = 3.0;        
+    int num3 = 4;         
+
+    // Perform floating-point division
+    double result1 = num1 / num2;  // double / double    
+    double result2 = num1 / num3;  // double / int -> promoted to double division   
+
+    // Print results with 2 decimal places
+    printf("Result1: %.2f\n", result1);       
+    printf("Result2: %.2f\n", result2);  
+
+    return 0; 
+}
