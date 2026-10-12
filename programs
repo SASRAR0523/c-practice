@@ -481,3 +481,69 @@ int main() {
 
     return 0; 
 }
+
+// Write a C program to manage classroom attendance by updating the student count using assignment operators and the post-decrement operator,
+// displaying values at each stage. Ensure to use %d\n for printing integer values.
+
+#include <stdio.h>
+
+int main() {
+    // Initialize student count and print initial remaining students
+    int students = 26;
+    printf("Students remaining after early leave: %d\n", students);
+    
+    // Update student count using an assignment operator (-=)
+    students -= 1;
+    printf("Corrected remaining students: %d\n", students);
+    
+    // Step 1: Use post-decrement (students--) inside printf to show the value before adjustment
+    printf("Students before final adjustment: %d\n", students--);
+    
+    // Step 2: Display the updated value after the decrement has taken effect
+    printf("Final recorded student count: %d\n", students);
+    
+    return 0;
+}
+
+//  the pre-decrement operator (--x) decreases the value of a variable by 1 before it is used in an expression. 
+// This means the variable is decremented first, and then the updated value is used in the expression.
+
+#include <stdio.h>
+
+int main() {
+    int count = 18;  // Initialize count with 18
+
+    // Print the value before any operation
+    printf("Before decrement: %d\n", count);
+
+    // Pre-decrement: Decreases count first, then prints the updated value
+    printf("Using --count: %d\n", --count);
+
+    // Print the value after decrement
+    printf("After decrement: %d\n", count);
+
+    return 0;
+}
+
+//  we demonstrate a ticket booking system where the number of available tickets is reduced as customers book their tickets.
+// The pre-decrement operator (--x) is used to reduce the ticket count before displaying the updated ticket count.
+
+#include <stdio.h>
+
+int main() {
+    int ticketsAvailable = 18;  // Total tickets available
+
+    // Show tickets available before booking
+    printf("Tickets available before booking: %d\n", ticketsAvailable);
+
+    // Customer 1 books a ticket, pre-decrement before showing updated count
+    printf("Customer 1 books a ticket: %d\n", --ticketsAvailable);
+
+    // Customer 2 books a ticket, pre-decrement again before showing updated count
+    printf("Customer 2 books a ticket: %d\n", --ticketsAvailable);
+
+    // Show final tickets available after two bookings
+    printf("Tickets remaining after bookings: %d\n", ticketsAvailable);
+
+    return 0;
+}
