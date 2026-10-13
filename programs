@@ -547,3 +547,37 @@ int main() {
 
     return 0;
 }
+
+// You are working with a game score system that tracks both the score and lives remaining.
+// The task is to update the score and lives when a player completes a task.
+
+
+#include <stdio.h>
+
+int main() {
+    int score = 25;
+    int lives = 3;
+
+    printf("Score before task: %d\n", --score);
+    lives--;
+    printf("Lives remaining after task: %d\n", lives);
+    printf("Score after task: %d\n", score);
+
+    return 0;
+}
+
+// Write a C program to calculate the average marks of a student in 5 subjects using the division operator (/). Apply the pre-decrement (--x)
+// to adjust the number of subjects before calculation and display the average marks.
+
+#include <stdio.h>
+
+int main() {
+    float totalMarks = 435.0;
+    int numberOfSubjects = 5;
+
+    float averageMarks = totalMarks / --numberOfSubjects;
+
+    printf("Average marks: %f\n", averageMarks);
+
+    return 0;
+}
