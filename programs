@@ -581,3 +581,53 @@ int main() {
 
     return 0;
 }
+
+// Write a C program to calculate a customer's final shopping score by adding bonus points with post-increment and adjusting the total with pre-decrement for redemption.
+
+#include <stdio.h>
+
+int main() {
+    int baseScore = 100;
+    int bonus = 20;
+    int redeemed = 5;
+
+    int total = baseScore + bonus++;
+    printf("Score after bonus addition: %d\n", total);
+
+    total -= --redeemed;
+    printf("Score after redemption: %d\n", total);
+
+    printf("Final bonus value: %d\n", bonus);
+    printf("Final redeemed value: %d\n", redeemed);
+
+    return 0;
+}
+
+// Till now, we’ve used arithmetic and increment/decrement operators — now we'll explore comparison operators like ==, !=, >, <, >=, and <=.
+
+// The equal to (==) operator is used to compare two values for equality. It checks if the values on both sides of the operator are equal and returns a bool value:
+
+// true (1) if the values are equal
+// false (0) if the values are not equal
+
+#include <stdio.h>
+
+int main() {
+    int num1 = 10;         // Integer value
+    int num2 = 10;         // Another integer value
+    double price1 = 5.99;  // Double value
+    double price2 = 5.99;  // Another double value
+    float a = 7.5f;        // Float value
+    int b = 7;             // Integer value
+
+    // Comparing integers
+    printf("Comparing integers: %d\n", num1 == num2);      
+
+    // Comparing floating-point numbers
+    printf("Comparing doubles: %d\n", price1 == price2);   
+
+    // Comparing float and int
+    printf("Comparing float and int: %d\n", a == b);       
+
+    return 0;
+}
