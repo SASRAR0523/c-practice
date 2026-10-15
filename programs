@@ -631,3 +631,37 @@ int main() {
 
     return 0;
 }
+
+// Escape sequences in C
+
+// In this lesson, you'll learn how to use escape sequences in C to include special characters in your output.
+// These sequences begin with a backslash (\) followed by a character, letting you insert things like new lines, tabs,
+// or quotation marks within a string. They help format your output and handle characters that can’t be typed directly into text.
+
+#include <stdio.h> // Standard library for input and output functions
+
+int main() {
+    // Display letter pairs in two columns using tab (\t) and newline (\n)
+    printf("A\tB\n"); 
+    printf("C\tD\n");
+    printf("E\tF\n"); 
+
+    return 0; 
+}
+
+// In this example, we create a program that prints a neatly structured table using escape sequences like \t (tab) and \n (newline).
+// The table lists countries alongside their respective capitals. Tabs are used to align the columns clearly, and newlines move to the next row after each entry.
+
+#include <stdio.h> // Include standard input/output library
+
+int main() {
+    // Print header row with tabs to separate "Country" and "Capital"
+    printf("Country:\tCapital:\n");
+
+    // Print each country with its capital, using \t for spacing and \n for new lines
+    printf("India\t\tNew Delhi\n");     
+    printf("France\t\tParis\n");        
+    printf("Japan\t\tTokyo\n");         
+
+    return 0; 
+}
