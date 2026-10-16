@@ -678,3 +678,22 @@ int main() {
 
     return 0;
 }
+
+// Displaying Height and Weight in C
+// A doctor measures the height and weight of a patient.
+
+// Use int to measure height and short to measure weight.
+
+#include <stdio.h>
+
+int main() {
+    // Declare a short variable for weight and assign it the value 70
+    int Weight= 70;
+    // Declare an integer variable for height and assign it the value 175
+    int Height = 175;
+    // Print: "Height: " followed by the value of height
+    printf("Height: %d\n",Height);
+    // Print: "Weight: " followed by the value of weight
+    printf("weight: %d\n",Weight);
+    return 0;
+}
