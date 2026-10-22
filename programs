@@ -746,3 +746,42 @@ int main() {
 
     return 0;
 }
+
+//  we demonstrate how to use an if-else statement with the logical || (OR) operator to check if a person is eligible for a job based on multiple conditions.
+// This method helps in understanding how multiple conditions can be checked using OR in C.
+
+#include <stdio.h>
+
+int main() {
+    int yearsOfExperience = 6;     // Years of work experience
+    int hasRelevantDegree = 1;     // 1 if the candidate has a relevant degree, 0 otherwise
+
+    // Check if the candidate is eligible for the job using OR (||) condition
+    if (yearsOfExperience >= 5 || hasRelevantDegree) {
+        printf("You are eligible for the job.\n");
+    } else {
+        printf("You are not eligible for the job.\n");
+    }
+
+    // Final message after checking
+    printf("Job eligibility check completed.\n");
+
+    return 0;
+}
+
+// you can use the logical OR operator (||) to combine multiple conditions. The OR operator checks if at least one condition is true. If any of the conditions is true, the entire expression becomes true.
+
+#include <stdio.h>
+
+int main() {
+    int age = 16;
+    int hasParentPermission = 1;  
+
+    if (age >= 18 || hasParentPermission) {
+        printf("You are allowed to participate.\n");
+    } else {
+        printf("You are not allowed to participate.\n");
+    }
+
+    return 0;
+}
