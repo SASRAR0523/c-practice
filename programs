@@ -785,3 +785,26 @@ int main() {
 
     return 0;
 }
+
+// In C, the Greater Than (>) and Less Than (<) operators are used to compare two values.
+// (Greater Than) checks if the left value is larger than the right value.
+// (Less Than) checks if the left value is smaller than the right value.
+// These operators return 1 (true) if the condition is met, and 0 (false) if not.
+
+#include <stdio.h>
+
+int main() {
+    int score = 75;
+    
+    if (score > 50) {
+        printf("Pass\n");
+    }
+
+    int age = 16;
+    
+    if (age < 18) {
+        printf("Minor\n");
+    }
+
+    return 0;
+}
