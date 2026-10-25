@@ -808,3 +808,42 @@ int main() {
 
     return 0;
 }
+
+// Write a C program that reads the pollution level of a water sample and classifies it as Highly Polluted, Moderately Polluted, or Clean, using an if–else if structure.
+
+#include <stdio.h>
+
+int main() {
+int level;
+scanf("%d", &level);
+
+if (level >= 85) {
+    printf("Water Status: Highly Polluted");
+} else if (level >= 70) {
+    printf("Water Status: Moderately Polluted");
+} else {
+    printf("Water Status: Clean");
+}
+
+return 0;
+
+}
+
+//  building a program to categorize a person's age into different life stages. Use if-else if conditions to classify the person as a Child, Teenager, or Adult based on their age.
+
+#include <stdio.h>
+
+int main() {
+int age = 16;
+
+if (age <= 12) {
+    printf("Child\n");
+} else if (age <= 19) {
+    printf("Teenager\n");
+} else {
+    printf("Adult\n");
+}
+
+return 0;
+
+}
