@@ -891,3 +891,47 @@ int main() {
 
     return 0;
 }
+
+// Write a C program that takes the current hour (in 24-hour format) as input and recommends a suitable meal using an if–else if–else ladder.
+
+#include <stdio.h>
+
+int main() {
+    int hour;
+    scanf("%d", &hour);
+
+    if (hour >= 6 && hour < 10) {
+        printf("Suggested Meal: Breakfast\n");
+    } else if (hour >= 12 && hour < 15) {
+        printf("Suggested Meal: Lunch\n");
+    } else if (hour >= 19 && hour < 21) {
+        printf("Suggested Meal: Dinner\n");
+    } else {
+        printf("Suggested Meal: Snack or Rest Time\n");
+    }
+
+    return 0;
+}
+
+// In C, a nested if statement refers to an if statement placed inside another if statement. This structure allows for more complex decision-making,
+// where multiple conditions are checked within different levels of logic.
+
+#include <stdio.h>
+
+int main() {
+    int age = 20;
+    int income = 25000;
+
+    // Nested if statement to check both age and income
+    if (age >= 18) {  // Check if age is greater than or equal to 18
+        if (income >= 20000) {  // Check if income is greater than or equal to 20000
+            printf("Eligible for the loan.\n");
+        } else {
+            printf("Income too low for the loan.\n");
+        }
+    } else {
+        printf("Not eligible for the loan due to age.\n");
+    }
+
+    return 0;
+}
