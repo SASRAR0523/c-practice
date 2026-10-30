@@ -935,3 +935,42 @@ int main() {
 
     return 0;
 }
+
+# we demonstrate how to use nested if statements to determine if a person is eligible for a loan based on both their age and income.
+# The program will first check if the person is eligible based on their age and, if true, then check their income to finalize the decision.
+
+age = int(input())
+income = int(input())
+
+if age >= 18:
+    if income >= 25000:
+        print("Eligible for Loan")
+    else:
+        print("Not Eligible for Loan")
+else:
+    print("Not Eligible for Loan")
+
+// You are building a program to determine whether a person is eligible for a discount on a product.
+// The discount eligibility depends on both the membership status and the total purchase amount.
+
+#include <stdio.h>
+
+int main() {
+    int isMember = 1;  // 1 indicates membership, 0 indicates no membership
+    float purchaseAmount = 150.0;
+
+    if (isMember) {
+        if (purchaseAmount >= 100) {
+            printf("Eligible for 10% discount.\n");
+        } else {
+            printf("Membership, but purchase amount too low for discount.\n");
+        }
+    } else {
+        printf("Not eligible for discount due to no membership.\n");
+    }
+
+    return 0;
+}
+
+
+
