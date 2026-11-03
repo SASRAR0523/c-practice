@@ -972,5 +972,50 @@ int main() {
     return 0;
 }
 
+// Write a program that takes a student’s marks as input, validates the marks, and then classifies the result:
+// An integer representing the student’s marks (expected between 0 and 100).
+
+#include <stdio.h>
+
+int main() {
+    int marks;
+
+    scanf("%d", &marks);
+
+    if (marks < 0 || marks > 100) {
+        printf("Invalid marks entered!");
+    }
+    else {
+        if (marks >= 40) {
+            if (marks >= 75) {
+                printf("Passed with Distinction");
+            }
+            else {
+                printf("Passed");
+            }
+        }
+        else {
+            printf("Failed");
+        }
+    }
+
+    return 0;
+}
+
+// In this example, we demonstrate how to use the ternary operator to check whether a number is positive or negative.
+// The program will evaluate the number using the ternary operator and print the corresponding result.
+
+#include <stdio.h>
+
+int main() {
+    int number = 5;
+
+    // Using ternary operator to check if the number is positive or negative
+    (number >= 0) ? printf("The number is positive.\n") : printf("The number is negative.\n");
+
+    return 0;
+}
+
+
 
 
