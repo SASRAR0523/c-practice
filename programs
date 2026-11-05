@@ -1016,6 +1016,50 @@ int main() {
     return 0;
 }
 
+# The switch statement in C is used to evaluate a variable against a series of possible values (cases) and execute the 
+# block of code for the first match. It is an efficient way to handle multiple possible conditions based on a single expression.
+
+#include <stdio.h>
+
+int main() {
+    int day = 2;
+
+    switch (day) {
+        case 1:
+            printf("Monday\n");
+        case 2:
+            printf("Tuesday\n");
+        case 3:
+            printf("Wednesday\n");
+        default:
+            printf("Invalid day\n");
+    }
+
+    return 0;
+}
+
+# In this example, we demonstrate how omitting break statements in a switch block causes fall-through behavior. When a case matches, all subsequent cases execute until a break or the end of the switch is reached.
+
+#include <stdio.h>
+
+int main() {
+    int grade = 2;
+
+    printf("Grade level %d:\n", grade);
+
+    switch (grade) {
+        case 1:
+            printf("Beginner\n");
+        case 2:
+            printf("Intermediate\n");
+        case 3:
+            printf("Advanced\n");
+        default:
+            printf("Undefined Level\n");
+    }
+
+    return 0;
+}
 
 
 
