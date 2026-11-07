@@ -1061,5 +1061,58 @@ int main() {
     return 0;
 }
 
+// Write a program that takes a greeting (hi, hello, or hey) as input, maps it to a code (1, 2, or 3), and prints responses using a switch statement.
+
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char s[20];
+    int n;
+
+    scanf("%s", s);
+
+    if (strcmp(s, "hi") == 0)
+        n = 1;
+    else if (strcmp(s, "hello") == 0)
+        n = 2;
+    else
+        n = 3;
+
+    switch (n) {
+        case 1:
+            printf("Hi! How can I help you? ");
+        case 2:
+            printf("Hello there! ");
+        case 3:
+            printf("Hey, what's up? Nice to meet you.");
+            break;
+    }
+
+    return 0;
+}
+
+// The break statement in C is used to exit the switch statement once a matching case is found. It prevents the program from executing subsequent case blocks (fall-through behavior).
+
+#include <stdio.h>
+
+int main() {
+    int day = 2;
+
+    switch (day) {
+        case 1:
+            printf("Monday\n");
+            break;
+        case 2:
+            printf("Tuesday\n");
+            break;
+        default:
+            printf("Invalid day\n");
+    }
+
+    return 0;
+}
+
+
 
 
