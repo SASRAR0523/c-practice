@@ -1113,6 +1113,33 @@ int main() {
     return 0;
 }
 
+// Write a program that takes a visitor category as input and prints the corresponding ticket price based on the category.
+
+#include <stdio.h>
+
+int main() {
+    char ch;
+    scanf(" %c", &ch);
+
+    switch(ch) {
+        case 'A':
+            printf("Ticket Price: $20");
+            break;
+
+        case 'C':
+            printf("Ticket Price: $10");
+            break;
+
+        case 'S':
+            printf("Ticket Price: $15");
+            break;
+
+        default:
+            printf("Invalid category");
+    }
+
+    return 0;
+}
 
 
 
