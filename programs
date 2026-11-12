@@ -1141,5 +1141,28 @@ int main() {
     return 0;
 }
 
+// Write a C program that takes two integers, M (starting task number) and N (ending task number), and counts down from M to N using a step decrement of 2.
+// For every task number divisible by 4, print "Task Milestone!" followed by the task number.
+
+#include <stdio.h>
+
+int main() {
+    int M, N;
+    scanf("%d %d", &M, &N);
+
+    int currentTask = M;
+
+    while (currentTask >= N) {
+        if (currentTask % 4 == 0) {
+            printf("Task Milestone! Task #%d\n", currentTask);
+        } else {
+            printf("Task #%d\n", currentTask);
+        }
+
+        currentTask -= 2;
+    }
+
+    return 0;
+}
 
 
