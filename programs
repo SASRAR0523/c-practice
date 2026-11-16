@@ -1165,4 +1165,44 @@ int main() {
     return 0;
 }
 
+// Write a program that declares and initializes three different arrays in C and print a confirmation message:
+// A float array temperatures to store 5 daily temperatures (e.g., 72.0, 68.0, 75.0, 80.0, 82.0).
+// A char array weather initialized without specifying size (e.g., 'S', 'U', 'N', 'N', 'Y').
+// An int array counters of size 5, with all elements set to 0.
+
+#include <stdio.h>
+
+int main() {
+    // 1. Explicit size initialization (5 floats)
+    float temperatures[5] = {72.0f, 68.0f, 75.0f, 80.0f, 82.0f};
+
+    // 2. Implicit size initialization (5 characters)
+    char weather[] = {'S', 'U', 'N', 'N', 'Y'};
+
+    // 3. Partial initialization (sets all elements to 0)
+    int counters[5] = {0};
+
+    // Output success message
+    printf("Arrays declared and initialized successfully!\n");
+
+    return 0;
+}
+
+// given a C program that initializes an array of 5 integers and needs to print the middle element. Complete the code so that it correctly prints the middle value.
+
+#include<stdio.h>
+
+int main(){
+    int numbers[5] = {15,25,35,45,55};
+
+    printf("Middle element is :%d\n",numbers[2]);
+
+    return 0;
+
+}
+
+
+
+
+
 
