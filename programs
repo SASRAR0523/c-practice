@@ -1201,6 +1201,25 @@ int main(){
 
 }
 
+#include <stdio.h>
+
+int main() {
+    int numbers[5];
+
+    // Taking input from the user
+    printf("Enter 5 integers:\n");
+    for (int i = 0; i < 5; i++) {
+        scanf("%d", &numbers[i]);
+    }
+
+    // Printing the array elements
+    printf("You entered: ");
+    for (int i = 0; i < 5; i++) {
+        printf("%d ", numbers[i]);
+    }
+
+    return 0;
+}
 
 
 
