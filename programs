@@ -1249,6 +1249,31 @@ int main() {
     return 0;
 }
 
+// In this example, we demonstrate how to use the sizeof() operator in C to calculate the total size, element size, and number of elements in different character arrays.
+// We use three arrays: one to store vowels, another for consonants, and a third for digit characters.
 
+#include <stdio.h>
 
+int main() {
+    char vowels[10] = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
+    char consonants[5] = {'b', 'c', 'd', 'f', 'g'};
+    char digits[7] = {'0', '1', '2', '3', '4', '5', '6'};
+
+    printf("Vowels array:\n");
+    printf("Total size: %zu bytes\n", sizeof(vowels));
+    printf("Element size: %zu byte\n", sizeof(vowels[0]));
+    printf("Number of elements: %zu\n\n", sizeof(vowels) / sizeof(vowels[0]));
+
+    printf("Consonants array:\n");
+    printf("Total size: %zu bytes\n", sizeof(consonants));
+    printf("Element size: %zu byte\n", sizeof(consonants[0]));
+    printf("Number of elements: %zu\n\n", sizeof(consonants) / sizeof(consonants[0]));
+
+    printf("Digits array:\n");
+    printf("Total size: %zu bytes\n", sizeof(digits));
+    printf("Element size: %zu byte\n", sizeof(digits[0]));
+    printf("Number of elements: %zu\n", sizeof(digits) / sizeof(digits[0]));
+
+    return 0;
+}
 
